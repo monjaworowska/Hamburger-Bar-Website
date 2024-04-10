@@ -15,7 +15,8 @@
 	box-sizing: border-box;
 	outline: none; border: none;
 	text-decoration: none;
-	transition: .2s linear; 
+	transition: .2s linear;
+	text-transform: capitalize;
 }
 html
 {
@@ -23,6 +24,10 @@ html
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 8rem;
+}
+body
+{
+	background-color: #fff;
 }
 a
 {
@@ -32,23 +37,17 @@ li
 {
     list-style: none;
 }
-.section
-{    
-    padding: 2rem 9%;
-}
 .card
-{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+{ 
+	display: flex;
+	height: 100vh;
 }
 .row
 {
 	display: flex;
 	align-items: center;  
-	flex-wrap: wrap-reverse; 	 
+	flex-wrap: wrap-reverse; 	
+	padding: 2rem 9%;
 }
 .row .content
 {
@@ -62,6 +61,37 @@ li
 {
 	width: 100%;
 }
+.btn
+{
+	display: inline-block; 
+	border-radius: 3rem;
+	background-color: var(--color2);
+	cursor: pointer;
+	color: #fff; 
+	font-size: 2rem;
+	padding: 1rem 3rem;
+	margin-top: 2rem;
+}
+.btn:hover
+{
+	background-color: var(--color1);
+	color: #000;
+}
+.heading
+{
+	font-size: 3rem;
+	font-weight: bold;
+	padding: 2rem 0;
+	color: var(--color3);
+}
+.text
+{
+	font-size: 2rem;
+	line-height: 1.5;
+	padding-right: 2rem;
+	text-transform: none;
+}
+
 /*  header */
 header
 {
@@ -73,7 +103,7 @@ header
     display: flex;
 	align-items: center;
 	justify-content: space-between;
-    text-transform: capitalize;
+    padding: 2rem 9%;
 }
 header .logo
 {
@@ -97,17 +127,53 @@ header .navbar a:hover
 	font-size: 2.5rem;
 	display: none;
 }
-
-
+/* home section */
+.home
+{
+	margin-top: 8rem;  
+}  
+.home .row .image a
+{ 
+	font-size: 8px;
+	display: block;
+	text-align: center;
+}
+.home .row .content h3
+{
+	font-size: 3rem; 
+	font-weight: bold;
+	padding: 1rem 0;
+}
+.home .row .content p
+{
+	font-size: 2rem; 
+	line-height: 1.2;
+	padding: 1rem 0;
+	text-transform: none;
+}
+/* about */
+.about
+{
+	color: #fff;
+	background-color: var(--color2);  
+}
+.about .image .swiper-slide
+{
+	position: relative;
+}
+.about .image .swiper-slide a
+{
+	top: 5px; right: 5px;
+	position: absolute;
+}
 
 @media (max-width:991px){
 	html
 	{
 		font-size: 55%;
 	}	
-    .card
+	.card
 	{
-        margin-top: 8rem;
 		height: auto;
 	}
 }
