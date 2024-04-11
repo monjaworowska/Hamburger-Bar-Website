@@ -21,8 +21,7 @@ html
 {
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 8rem;
+    scroll-behavior: smooth; 
 }
 a
 {
@@ -62,6 +61,42 @@ li
 {
 	width: 100%;
 }
+.image-source
+{
+    font-size: 8px;
+	display: block;
+	text-align: right;
+}
+.btn
+{
+	display: inline-block; 
+	border-radius: 3rem;
+	background-color: var(--color2);
+	cursor: pointer;
+	color: #fff; 
+	font-size: 2rem;
+	padding: 1rem 3rem;
+	margin-top: 2rem;
+}
+.btn:hover
+{
+	background-color: var(--color1);
+	color: #000;
+}
+.heading
+{
+	font-size: 3rem;
+	font-weight: bold;
+	padding: 2rem 0;
+	color: var(--color3);
+    text-transform: capitalize;
+}
+.text
+{
+	font-size: 2rem;
+	line-height: 1.5;
+	padding-right: 2rem; 
+}
 /*  header */
 header
 {
@@ -97,18 +132,32 @@ header .navbar a:hover
 	font-size: 2.5rem;
 	display: none;
 }
+/* home section */
+.home .row .content h3
+{
+	font-size: 3rem; 
+	font-weight: bold;
+	padding: 1rem 0;
+}
+.home .row .content p
+{
+	font-size: 2rem; 
+	line-height: 1.2;
+	padding: 1rem 0;
+	text-transform: none;
+}
 
 
 
 @media (max-width:991px){
 	html
 	{
-		font-size: 55%;
+		font-size: 55%; 
 	}	
     .card
 	{
-        margin-top: 8rem;
 		height: auto;
+        padding-top: 8rem;
 	}
 }
 
